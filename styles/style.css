@@ -13,11 +13,19 @@
 body{
     font-family: "Poppins", sans-serif;
     padding:0 40px;
+    background-color: rgb(255, 255, 255);
 }
 p{
     color: rgb(58, 58, 58);
     font-size: 16px;
     font-weight: 600;
+}
+hr{
+    max-width:1110px;
+    margin: 0 auto;
+    color: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+    border-left: none;
+    border-right: none;
 }
 
 /*---------- Header section start here----------------------- */
@@ -60,6 +68,7 @@ p{
     align-items: center;
     flex:1;
     margin-top: 50px;
+    margin-bottom: 70px;
 }
 .banner-text{
     display: flex;
@@ -98,15 +107,78 @@ p{
     margin-right: 160px;
 }
 .banner-main-img{
+    background: url("../images/Circle\ design.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     max-width: 475px;
     height:475px;
-    box-sizing: border-box;
-    border: 3px solid rgb(241, 228, 255);
-    border-radius: 50%;
     padding:20px;
 }
 
-
+/*------------ main section start here -----------------------*/
+.partner{
+    max-width: 1110px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.collection{
+    max-width: 1050px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.collection h1{
+    color: rgb(58, 58, 58);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+.collection-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+}
+.collect-card-item{
+    max-width:330px;
+    height:475px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    padding:20px 15px;
+}
+.collect-card-item img{
+    margin-bottom: 16px;
+    width:100%;
+}
+.collect-card-item h3{
+    color: rgb(24, 25, 31);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.collect-card-item h4{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.collect-card-item h5 i{
+  color: rgb(251, 130, 0);
+}
+.collect-card-item p{
+    color: rgb(120, 120, 133);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.action-btn{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    
+}
 
 
 /*-------- Mobile and tab responsive --------------*/
@@ -114,6 +186,9 @@ p{
     .nav-bar,
     .menu-item{
         flex-direction: column;
+    }
+    hr{
+        width:100%;
     }
     .nav-menu-bar{
         margin: 0;
@@ -158,6 +233,29 @@ p{
         height:420px;
     }
     .banner-img img{
+        width:100%;
+    }
+    .partner{
+        width:calc(100% - 20px);
+        grid-template-columns: repeat(4, 1fr);
+        gap:20px;
+        justify-content: center;
+        align-content: center;
+    }
+    .partner img{
+        width:100%;
+    }
+    .collection{
+        width:100%;
+    }
+    .collection-card{
+        grid-template-columns: 1fr;
+    }
+    .collect-card-item{
+        max-width:calc(100% - 10px);
+        margin:20px 10px;
+    }
+    .collect-card-item img{
         width:100%;
     }
 }
