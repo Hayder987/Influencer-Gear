@@ -211,7 +211,36 @@ hr{
     padding: 10px 24px;
 }
 /* ------footer section start here ----------------*/
-
+.footer{
+    padding:50px 100px;
+    background-color: rgb(10, 8, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content{
+    max-width:260px;
+    height: 140px;
+    text-align: center;
+}
+.footer-content h1{
+    font-size: 1.5rem;
+    color:white;
+    margin-bottom: 10px;
+}
+.footer-content p{
+    color:white;
+    font-size: 0.8rem;
+    margin-bottom: 17px;
+}
+.footer-icon{
+    display: flex;
+    gap:40px;
+}
+.footer-icon a i{
+    color:white;
+    font-size: 30px;
+}
 
 
 
